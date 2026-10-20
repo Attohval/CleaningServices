@@ -66,8 +66,8 @@ h1 span, h2 span { color: #6c9183; }
 
 .site-header { position: sticky; top: 0; z-index: 20; background: var(--paper); }
 .header-inner { display: flex; min-height: 5.5rem; align-items: center; justify-content: space-between; }
-.brand { display: inline-flex; align-items: center; gap: 0.65rem; color: var(--ink); font-family: var(--font-heading); font-size: 1rem; font-weight: 800; letter-spacing: -0.04em; text-decoration: none; white-space: nowrap; }
-.brand-mark { display: grid; width: 2rem; height: 2rem; place-items: center; border-radius: 50%; background: var(--green); color: var(--white); font-family: Georgia, serif; font-size: 1.15rem; font-weight: 400; }
+.brand { display: inline-flex; align-items: center; text-decoration: none; }
+.brand-logo { display: block; width: 12rem; max-width: 100%; height: auto; }
 .primary-navigation { display: flex; align-items: center; gap: clamp(1rem, 2vw, 1.8rem); }
 .primary-navigation > a:not(.button) { color: #52635e; font-size: 0.83rem; font-weight: 500; text-decoration: none; transition: color 150ms ease; }
 .primary-navigation > a:not(.button):hover, .primary-navigation > a[aria-current="page"] { color: var(--green-dark); }
@@ -148,8 +148,7 @@ h1 span, h2 span { color: #6c9183; }
 
 .site-footer { padding-top: 4rem; background: #102e29; color: #eff3ef; }
 .footer-main { display: grid; grid-template-columns: 1.35fr 0.72fr 1fr 0.95fr; gap: 2.5rem; padding-bottom: 3rem; }
-.brand-footer { color: var(--white); }
-.brand-footer .brand-mark { background: #dce9df; color: var(--green-dark); }
+.brand-footer .brand-logo { width: 13rem; }
 .footer-brand > p { max-width: 15rem; margin: 1.2rem 0 0; color: #b2c3ba; font-size: 0.88rem; }
 .footer-social { display: flex; flex-wrap: wrap; gap: 0.85rem; margin-top: 1rem; }
 .footer-social a { color: #edf2ee; font-size: 0.75rem; text-decoration: underline; text-decoration-color: #718d81; text-underline-offset: 0.2rem; }
@@ -420,7 +419,8 @@ h1 span, h2 span { color: #6c9183; }
 }
 @media (max-width: 420px) {
   .container { width: calc(100% - 2rem); }
-  .brand { font-size: 0.91rem; }
+  .brand-logo { width: 10.5rem; }
+  .brand-footer .brand-logo { width: 12rem; }
   .hero-actions { align-items: flex-start; flex-direction: column; gap: 1.2rem; }
   .hero-actions .button { width: 100%; justify-content: space-between; }
   .service-card { grid-template-columns: 1fr; }

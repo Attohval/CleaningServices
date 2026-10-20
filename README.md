@@ -19,6 +19,7 @@ index.html                 Home
 services.html              Domestic and commercial cleaning
 about.html                 About and approach
 areas.html                 Service-area information
+faq.html                    Frequently asked questions
 contact.html               Enquiry form and contact details
 privacy.html               Draft privacy notice; noindex until reviewed
 css/style.css              Shared responsive design system

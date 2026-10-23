@@ -19,7 +19,7 @@
   --space-4: 2rem;
   --space-5: 3rem;
   --space-6: 4rem;
-  --space-7: 6rem;
+  --space-7: 4rem;
   --space-8: 8rem;
   --container: 1180px;
   --radius: 3px;
@@ -74,7 +74,7 @@ h1 span, h2 span { color: #6c9183; }
 .primary-navigation > a[aria-current="page"]:not(.button) { text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 0.45rem; }
 .menu-toggle { display: none; }
 
-.hero { position: relative; overflow: hidden; padding: 3.1rem 0 4.4rem; }
+.hero { position: relative; overflow: hidden; padding: 2rem 0 3rem; }
 .hero-grid { display: grid; min-height: 35rem; grid-template-columns: 1.02fr 0.98fr; align-items: center; gap: 4rem; }
 .hero-copy { position: relative; z-index: 2; padding: 0 0 0 1.2rem; }
 .hero-copy h1 { margin: 1.7rem 0 1.45rem; }

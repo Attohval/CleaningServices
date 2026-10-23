@@ -167,7 +167,7 @@ h1 span, h2 span { color: #6c9183; }
 .footer-bottom a { color: #edf2ee; text-decoration: none; }
 .footer-location { padding-left: 1rem; border-left: 1px solid rgb(255 255 255 / 24%); }
 
-.page-hero { padding: 5rem 0 2.5rem; background: var(--paper); }
+.page-hero { padding: 2rem 0 3rem; background: var(--paper); }
 .page-hero-inner { position: relative; }
 .page-hero h1 { margin: 1.5rem 0 1.4rem; font-size: clamp(3.5rem, 7vw, 6rem); }
 .page-hero h1 span { color: var(--green); }
@@ -204,7 +204,7 @@ h1 span, h2 span { color: #6c9183; }
 .specialist-service-card h3 { margin-bottom: 0.6rem; font-size: 1.2rem; }
 .specialist-service-card p:not(.card-index) { margin-bottom: 1rem; color: var(--ink-soft); font-size: 0.86rem; }
 .specialist-service-card .text-link { margin-top: auto; font-size: 0.84rem; }
-.service-extra-links { display: flex; align-items: flex-start; gap: 1rem; margin-top: 1.6rem; padding-top: 1.2rem; border-top: 1px solid var(--line); }
+.service-extra-links { display: flex; align-items: flex-start; gap: 1rem; margin-top: 1.6rem; padding-top: 1.2rem; border-top: 1px solid var(--line); justify-content: space-between; }
 .service-extra-links > p { flex: 0 0 auto; margin: 0.35rem 0 0; color: var(--ink-soft); font-size: 0.82rem; font-weight: 600; }
 .service-extra-links ul { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0; padding: 0; list-style: none; }
 .service-extra-links a { display: inline-flex; padding: 0.3rem 0.65rem; border: 1px solid var(--line); color: var(--green-dark); font-size: 0.76rem; text-decoration: none; }

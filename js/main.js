@@ -198,13 +198,19 @@
   if (serviceSelect && Array.isArray(config.services)) {
     const selectedService = new URLSearchParams(window.location.search).get("service");
     const approvedServices = new Set(config.services);
+    const slugifyService = (service) => service.toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-|-$/g, "");
     Array.from(serviceSelect.options).forEach((option) => {
       if (option.value && !approvedServices.has(option.value)) {
         option.remove();
       }
     });
-    const requestedService = selectedService === "domestic" ? "Domestic cleaning" :
-      selectedService === "commercial" ? "Commercial cleaning" : "";
+    const requestedService = config.services.find((service) =>
+      slugifyService(service) === selectedService ||
+      (selectedService === "domestic" && service === "Domestic cleaning") ||
+      (selectedService === "commercial" && service === "Commercial cleaning")
+    );
     if (requestedService && approvedServices.has(requestedService)) {
       serviceSelect.value = requestedService;
     }

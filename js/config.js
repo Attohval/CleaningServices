@@ -13,5 +13,15 @@ window.SITE_CONFIG = {
   websiteDomain: "",
   allowIndexing: false,
   formEndpoint: "",
-  services: ["Domestic cleaning", "Commercial cleaning"]
+  services: [
+    "Domestic cleaning",
+    "Commercial cleaning",
+    "End-of-tenancy cleaning",
+    "Deep cleaning",
+    "Carpet and upholstery cleaning",
+    "Window cleaning",
+    "After-builders cleaning",
+    "Move-in/move-out cleaning",
+    "Holiday-let cleaning"
+  ]
 };

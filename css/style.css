@@ -81,6 +81,8 @@ h1 span, h2 span { color: #6c9183; }
 .hero-copy h1 span { color: var(--green); }
 .hero-intro { max-width: 32rem; margin-bottom: 2rem; color: var(--ink-soft); font-size: 1.1rem; line-height: 1.75; }
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1.7rem; }
+.hero-actions .text-link { min-height: 3.35rem; padding: 0.85rem 1.1rem; border: 1px solid var(--green); border-radius: var(--radius); transition: background-color 160ms ease, border-color 160ms ease; }
+.hero-actions .text-link:hover { border-color: var(--green-dark); background: var(--mint); }
 .hero-note { display: flex; align-items: center; gap: 0.65rem; margin: 2.7rem 0 0; color: #71817c; font-size: 0.76rem; }
 .note-dot { width: 0.45rem; height: 0.45rem; border-radius: 50%; background: var(--accent); }
 .hero-visual { position: relative; width: 100%; max-width: 31rem; justify-self: end; padding: 0 1.6rem 1.5rem 0; }
@@ -391,7 +393,7 @@ h1 span, h2 span { color: #6c9183; }
   .footer-main { grid-template-columns: 1fr 1fr; gap: 2.2rem 1.2rem; }
   .footer-brand { grid-column: 1 / -1; }
   .footer-bottom { align-items: flex-start; flex-direction: column; justify-content: center; padding-block: 1rem; }
-  .page-hero { padding: 3.4rem 0 2rem; }
+  .page-hero { padding: 2.2rem 0 2rem; }
   .page-hero h1 { font-size: clamp(3.2rem, 11vw, 5rem); }
   .page-hero-inner > p:not(.eyebrow) { font-size: 0.98rem; }
   .service-detail-section { padding-block: 3.5rem; }
@@ -417,12 +419,19 @@ h1 span, h2 span { color: #6c9183; }
   .privacy-layout { grid-template-columns: 1fr; gap: 2rem; }
   .faq-contact-inner { align-items: flex-start; flex-direction: column; gap: 1rem; }
 }
+@media (max-width: 460px) {
+    .hero-actions {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+}
 @media (max-width: 420px) {
   .container { width: calc(100% - 2rem); }
   .brand-logo { width: 10.5rem; }
   .brand-footer .brand-logo { width: 12rem; }
-  .hero-actions { align-items: flex-start; flex-direction: column; gap: 1.2rem; }
   .hero-actions .button { width: 100%; justify-content: space-between; }
+  .hero-actions .text-link { width: 100%; display: inline-flex; justify-content: space-between; }
   .service-card { grid-template-columns: 1fr; }
   .service-card > img { height: 12.5rem; min-height: 12.5rem; }
   .service-card-content { min-height: 15rem; }
